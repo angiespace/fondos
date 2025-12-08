@@ -1,0 +1,358 @@
+/* Import Google Font */
+@import url(https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap);
+
+body, .container, .tabs-container, .tabcontent, .tabs a {
+    font-family: 'The Girl Next Door', cursive !important;
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLING */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #a2a2a2;
+    padding-top: 60px; /* separación desde el tope de la página */
+}
+
+.darkmode .container {
+    background-color: #1A1B1F;
+    color: #8a8a8a;
+}
+
+.tabs-container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 500px;
+    margin: auto;
+}
+
+/* Style the tabs */
+.tabs {
+    margin-bottom: 28px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-box {
+    width: 430px;
+    padding: 16px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-box p {
+    font-weight: bold;
+    color: #626262;
+}
+
+.radio-box audio {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.tabs a {
+    cursor: pointer;
+    padding: 12px 24px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: background 0.1s, color 0.1s;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow:  3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tabs a:hover {
+    background: linear-gradient(145deg, #f4f4f4, #cecece);
+    color: #888;
+}
+
+.tabs a.active {
+    background: #f4f4f4;
+    box-shadow: inset 3px 3px 5px #cbcbcb, inset -3px -3px 5px #ffffff;
+    color: #bdbdbd;
+}
+
+.darkmode .tabs a {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    box-shadow: 3px 3px 6px #101114, -3px -3px 6px #24252a;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 46px;
+    min-height: 288px;
+    display: none;    
+    border-radius: 18px;
+    background: #f4f4f4;
+    box-shadow:  3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+}
+
+.darkmode .tabcontent {
+    background: linear-gradient(145deg, #1c1d21, #17181c);
+    box-shadow: 3px 3px 6px #101114, -3px -3px 6px #24252a;
+}
+
+.content .active {
+    display: block;
+}
+
+.tabcontent p {
+    margin-bottom: 12px;
+}
+
+.tabcontent p:last-child {
+    margin-bottom: 0;
+}
+
+.tabcontent .read-more-link a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.darkmode .tabcontent .read-more-link a {
+    color: #d4d4d4;
+}
+
+.icon {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+/* Dark mode switch */
+.dark-mode-switch {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin-top: 80px;
+}
+
+.switch-label {
+    cursor: pointer;
+    font-size: 0.85em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    margin-left: 4px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1A1B1F;
+    transition: .2s;
+    box-shadow: 2px 2px 3px #ffffff, -2px -2px 3px #bebebe;
+}
+
+.darkmode .slider {
+    box-shadow: 2px 2px 3px #34353a, -2px -2px 3px #000104;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 2px;
+    background: #9294b8;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #f4f4f4;
+}
+
+input:checked + .slider:before {
+    transform: translateX(21px);
+}
+
+.slider.round {
+    border-radius: 11px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Small screen fallback */
+.small-screen {
+    display: none;
+    background-color: #f4f4f4;
+    height: 100vh;
+    color: #a2a2a2;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.darkmode .small-screen {
+    background-color: #1A1B1F; 
+    color: #8a8a8a;
+}
+
+.small-screen-content {
+    width: 70%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .container { display: none; }
+    .small-screen { display: flex; }
+    .tabcontent { display: block; }
+}
+
+/* ======================= */
+
+/* GALERÍA GENERAL: boxes normales 3 por fila */
+.gallery {
+    display: grid;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* ===================== */
+/* TABCONTENT1 - 3 por fila, boxes 250x200 */
+#tabcontent1 .gallery {
+    grid-template-columns: repeat(3, 250px);
+}
+
+#tabcontent1 .image-box {
+    width: 250px;
+    height: 200px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tabcontent1 .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===================== */
+/* TABCONTENT2 - 2 por fila, boxes 500x500 */
+#tabcontent2 .gallery {
+    grid-template-columns: repeat(2, 500px);
+}
+
+#tabcontent2 .image-box-externos {
+    width: 360px;
+    height: 190px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tabcontent2 .image-box-externos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===================== */
+/* TABCONTENT3 - 2 por fila, boxes 380x100 */
+#tabcontent3 .gallery {
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
+    gap: 20px 24px;
+}
+
+#tabcontent3 .image-box-pstyle {
+    width: 380px;
+    height: 100px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+#tabcontent3 .image-box-pstyle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===================== */
+/* TABCONTENT4 - 2 por fila, boxes 430x100 */
+#tabcontent4 .gallery {
+    grid-template-columns: repeat(2, 430px);
+    justify-content: center;
+    gap: 20px;
+}
+
+#tabcontent4 .image-box-pstyle2 {
+    width: 430px;
+    height: 100px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+#tabcontent4 .image-box-pstyle2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hover para todas las cajas */
+.image-box, .image-box-pstyle, .image-box-pstyle2, .image-box-externos {
+    cursor: pointer;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.image-box:hover, .image-box-pstyle:hover, .image-box-pstyle2:hover, .image-box-externos:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Responsive: 1 por fila en pantallas estrechas */
+@media (max-width: 820px) {
+    .gallery { grid-template-columns: 1fr; justify-content: center; gap: 16px; padding: 0 12px; }
+    #tabcontent3 .image-box-pstyle,
+    #tabcontent4 .image-box-pstyle2 { width: 100%; height: 120px; }
+    #tabcontent2 .image-box-externos { width: 100%; height: auto; aspect-ratio: 1/1; }
+    #tabcontent1 .image-box { width: 100%; height: auto; aspect-ratio: 5/4; }
+}
