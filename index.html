@@ -1,202 +1,204 @@
-
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Angie · XS</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
-</head>
-<body>
+<html>
+<title>αηgιє · Gifs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #000;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-<div id="container" class="container">
-  <div id="tabs" class="tabs-container">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- IMAGEN SUPERIOR IZQUIERDA -->
+  <img src="https://xatimg.com/image/Fk26b9tZmxcc.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-    <div class="tabs">
-      <!-- añadir href="#" y marcar la primera como active -->
-      <a href="#" id="tab1" data-tab="1" class="tab active">Pcback</a>
-      <a href="#" id="tab2" data-tab="2" class="tab">Externos</a>
-      <a href="#" id="tab3" data-tab="3" class="tab">PstyleGif</a>
-      <a href="#" id="tab4" data-tab="4" class="tab">Players</a>
-    </div>
-
-    <div class="content">
-      <!-- TAB 1 -->
-      <div id="tabcontent1" data-tab="1" class="tabcontent active">
-        <div class="gallery">
-          <div class="image-box"><img src="https://i.ibb.co/qLpSRSvq/PCBACK-1.gif" alt="Fondo 1"></div>
-          <div class="image-box"><img src="https://i.ibb.co/603JmTWD/PCBACK.gif" alt="Fondo 2"></div>
-          <div class="image-box"><img src="https://i.ibb.co/1JvRDtkF/2.gif" alt="Fondo 3"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/3RNfPWwmLOnl.gif" alt="Fondo 4"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/4iy6ChKGjf7c.gif" alt="Fondo 5"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/FDQio4UAFNGX.gif" alt="Fondo 6"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/kWhzEAc76CVx.gif" alt="Fondo 7"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Fondo 8"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Fondo 9"></div>
-          <div class="image-box"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Fondo 10"></div>
-        </div>
-      </div>
-
-      <!-- TAB 2 -->
-      <div id="tabcontent2" data-tab="2" class="tabcontent">
-        <div class="gallery">
-          <div class="image-box-externos"><img src="https://i.ibb.co/mrtHFFVj/2.png" alt="Externo 1"></div>
-          <div class="image-box-externos"><img src="https://i.ibb.co/Q3j0y19n/1.png" alt="Externo 2"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/gX94Bm6gXmrp.png" alt="Externo 3"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/uPsAsL8GPpqK.png" alt="Externo 4"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/iacSuNp5bbF1.png" alt="Externo 5"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/Y1bVkt8ovdZI.png" alt="Externo 6"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/GN5LUk6s5XKu.png" alt="Externo 7"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/hRkaU7fzwJ0p.png" alt="Externo 8"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/bZVUzuTRf52j.png" alt="Externo 9"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/Pyw9BRtVySWx.png" alt="Externo 10"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Externo 11"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Externo 12"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Externo 13"></div>
-          <div class="image-box-externos"><img src="https://xatimg.com/image/3z5hlFVl19dD.jpg" alt="Externo 14"></div>
-        </div>
-      </div>
-
-      <!-- TAB 3 -->
-      <div id="tabcontent3" data-tab="3" class="tabcontent">
-        <div class="gallery">
-          <div class="image-box-pstyle"><img src="https://i.ibb.co/TyDPjSm/PSTYLE.gif" alt="Gif 1"></div>
-          <div class="image-box-pstyle"><img src="https://i.ibb.co/HD526RQ0/PSTYLE.gif" alt="Gif 2"></div>
-          <div class="image-box-pstyle"><img src="https://i.ibb.co/mVPmVytf/3.gif" alt="Gif 3"></div>
-          <div class="image-box-pstyle"><img src="https://xatimg.com/image/Cg4IBWnvZIln.gif" alt="Gif 4"></div>
-        </div>
-      </div>
-
-      <!-- TAB 4 -->
-      <div id="tabcontent4" data-tab="4" class="tabcontent">
-        <div class="gallery">
-          <div class="radio-box">
-      <p>Player 1</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 2</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 3</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 4</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 5</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 6</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 7</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 8</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 9</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 10</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 11</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-
-    <div class="radio-box">
-      <p>Player 12</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-    
-    <div class="radio-box">
-      <p>Player 13</p>
-      <audio controls>
-        <source src="https://antyserv.in/8242/stream" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
-    
-    
-
-        </div>
-      </div>
-
-    </div> <!-- .content -->
-
-  </div> <!-- .tabs-container -->
-
-  <!-- dark-mode switch (igual que antes) -->
-  <div class="dark-mode-switch">
-    <label class="switch-label" for="dark-mode-switch">Dark mode</label>
-    <label class="switch">
-      <input type="checkbox" id="dark-mode-switch">
-      <span class="slider round"></span>
-    </label>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
+</div>
 
-</div> <!-- .container -->
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span>...✿...𝖆𝖓𝖌𝖎𝖊...✿...</h1>
+    <p>GIF GALLERY PORTFOLIO</p>
+    <p><a href="https://angiespace.github.io/fondos/" target="black">Click> Galería de Fondos</a></p>
+  </header>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    
+    <div class="jd-content"> 
+      
+<div class="jd-box"> <img src="https://i.ibb.co/yB4qxJRr/GIF.gif" /> 
+<span>1</span>
+</div> 
 
-<script src="./script.js"></script>
+<div class="jd-box"> <img src="https://i.ibb.co/GvKgTGHx/GIF.gif" />
+<span>2...</span>
+</div>       
+      
+<div class="jd-box"> <img src="https://xatimg.com/image/gtn83TMYmI0l.gif" /> 
+<span>3...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://xatimg.com/image/auivVJ7rlCMz.gif" />
+<span>4...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div>       
+      
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div>       
+      
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div>       
+      
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"><img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"><img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+</div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" />
+<span>WAIT...</span>
+ </div> 
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div>
+
+<div class="jd-box"> <img src="https://i.postimg.cc/ZnjnDy0p/waitforitgif.gif" /> 
+<span>WAIT...</span>
+</div> 
+    
+    </div>  
+    
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
